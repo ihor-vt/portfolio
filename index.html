@@ -45,24 +45,29 @@
                 </button>
             </div>
         </div>
-        <button class="header__bars">
+        <button id="header__bars">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
             </svg>
         </button>
 
-        <!-- <div class="header__bars__menu" id="bars__menu">
+        <div id="bars__menu">
+            <div id="close_bars_menu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <ul class="header__bars__menu__list">
-                <li class="header__link-bars"><a href="#contact"></a>Currently</li>
-                <li class="header__link-bars"><a href="#features"></a>About</li>
-                <li class="header__link-bars"><a href="#pricing"></a>Portfolio</li>
-                <li class="header__link-bars"><a href="#contact"></a>Contact</li>
+                <li class="header__link-bars"><a href="#currently">Currently</a></li>
+                <li class="header__link-bars"><a href="#about">About</a></li>
+                <li class="header__link-bars"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__link-bars"><a href="#contact">Contact</a></li>
+                <li class="header__link-bars disable_margin_bottom">
+                    <button class="btn header__btn bars__menu__btn">
+                        <i class="fa-solid fa-download"></i>
+                        Resume
+                    </button>
+                </li>
             </ul>
-            <button class="btn header__btn">
-                <i class="fa-solid fa-download"></i>
-                Resume
-            </button>
-        </div> -->
+        </div>
     </header>
 
     <script src="src/js/switch.js"></script>

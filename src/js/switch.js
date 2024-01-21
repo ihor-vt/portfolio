@@ -1,6 +1,6 @@
 let checkbox = document.querySelector("#switch");
 let body = document.querySelector('body');
-let headerBars = document.querySelector('.header__bars');
+let headerBars = document.querySelector('#header__bars');
 let headerLinks = document.querySelectorAll('.header__link');
 
 let localStorageTheme = localStorage.getItem("theme");
@@ -30,7 +30,7 @@ const setDarkMode = () => {
     localStorage.setItem("theme", "dark")
     checkbox.checked = true;
 
-    if (headerBars !== undefined) {
+    if (headerBars !== undefined && headerBars !== null) {
         headerBars.classList.remove('light');
         headerBars.classList.add('dark');
     }
@@ -48,7 +48,7 @@ const setLightMode = () => {
     localStorage.setItem("theme", "light")
     checkbox.checked = false;
 
-    if (headerBars !== undefined) {
+    if (headerBars !== undefined && headerBars !== null) {
         headerBars.classList.remove('dark');
         headerBars.classList.add('light');
     }
