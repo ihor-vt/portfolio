@@ -1,0 +1,47 @@
+:root {
+    --background: var(--bg-light);
+    --text-color: var(--text-dark);
+
+    --bg-dark: #030712;
+    --text-dark: #000;
+    --bg-light: #fff;
+    --text-light: #e2e8f0;
+
+    --text-hover: #333;
+    --button-hover: rgba(36, 129, 235, 0.791);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+body.light {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
