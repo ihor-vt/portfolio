@@ -45,3 +45,24 @@ button {
     cursor: pointer;
     font-family: inherit;
 }
+
+/* sm */
+@media (min-width: 640px) {
+    body {
+        margin: 3rem 0;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    body {
+        margin: 4rem 0;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    body {
+        margin: 6rem 0;
+    }
+}
